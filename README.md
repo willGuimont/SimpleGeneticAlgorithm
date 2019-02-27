@@ -5,8 +5,15 @@ Really simple genetic algorithm in Python
 # Example
 
 ```python
+import random
+
 import random_generator
 from dna import DNA
+
+TARGET = 'This is the target'
+LENGTH_TARGET = len(TARGET)
+POPULATION_SIZE = 100
+
 
 def fitness(agent):
     correct = 0
