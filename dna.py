@@ -10,8 +10,7 @@ class DNA:
         self_size = len(self.dna)
         assert self_size == len(other.dna)
         new = DNA(self_size, self.random_generator)
-        for i, dnas in enumerate(zip(self.dna, other.dna)):
-            a, b = dnas
+        for i in range(len(self.dna)):
             if random.uniform(0, 1) < self_probability:
                 new.dna[i] = self.dna[i]
             else:
